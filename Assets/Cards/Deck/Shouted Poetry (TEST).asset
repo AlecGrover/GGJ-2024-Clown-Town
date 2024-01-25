@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b37265d7f1cb33847bd181979d3bf3d4, type: 3}
+  m_Name: Shouted Poetry (TEST)
+  m_EditorClassIdentifier: 
+  cardName: Shouted Poetry
+  cardDescription: Steamboat Willie has forgotten that he isn't in a silent film
+    anymore. His bawdy poetry rings out for all to hear.
+  humorType1: {fileID: 11400000, guid: c0a916a2700c86842bce78dad52389fe, type: 2}
+  humorStyle1: 0
+  humorType2: {fileID: 11400000, guid: 1af52206db112b94bb91da58e3a7ffeb, type: 2}
+  humorStyle2: 1
+  power: 1
+  range: 1
+  cooldown: 1
+  cardEffect: {fileID: 0}
+  rarity: 0
+  cardArt: {fileID: 570447962, guid: d7683a72045e9a64caed7c5865808972, type: 3}
+  cardColor: {r: 0.10980392, g: 0.09019608, b: 0.07450981, a: 1}
+  cardBoldColor: {r: 0, g: 0, b: 0, a: 1}
+  cardLightColor: {r: 0.9333334, g: 0.76470596, b: 0.6039216, a: 1}
+  cardAccentColor: {r: 0.8745099, g: 0.4431373, b: 0.14901961, a: 1}
