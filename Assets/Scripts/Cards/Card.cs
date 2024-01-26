@@ -22,16 +22,18 @@ public class Card : ScriptableObject
 
     [Header("Parameters")]
     public int power = 1;
-    public float range = 1.0f;
-    public float cooldown = 1.0f;
+    public int range = 1;
+    public int cooldownTier = 1;
     public BaseCardEffect cardEffect;
     public ERarity rarity;
     
     [Header("Appearance")]
     public Sprite cardArt;
-    public Color cardColor;
-    public Color cardBoldColor;
-    public Color cardLightColor;
-    public Color cardAccentColor;
+    public Sprite cardBackArt;
+    public Color textColor = Color.black;
+    public Color cardColor = Color.white;
+    public Color cardBoldColor = Color.white;
+    public Color cardLightColor = Color.white;
+    public Color cardAccentColor = Color.white;
 
 }

@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: Volume
   m_EditorClassIdentifier: 
   classy: Quiet
-  classySprite: {fileID: 0}
-  crass: Loud
-  crassSprite: {fileID: 0}
+  classySprite: {fileID: 1835652796, guid: c36f1263e570bbe4aaa82c99e7da5c5f, type: 3}
+  classyBackgroundSprite: {fileID: 284027303, guid: c36f1263e570bbe4aaa82c99e7da5c5f, type: 3}
+  crass: Rowdy
+  crassSprite: {fileID: 519333966, guid: c36f1263e570bbe4aaa82c99e7da5c5f, type: 3}
+  crassBackgroundSprite: {fileID: 2034744496, guid: c36f1263e570bbe4aaa82c99e7da5c5f, type: 3}

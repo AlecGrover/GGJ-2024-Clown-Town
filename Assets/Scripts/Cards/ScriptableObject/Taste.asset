@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55178bf600b17d94eb63202f293c2319, type: 3}
   m_Name: Taste
   m_EditorClassIdentifier: 
-  classy: Clever
-  classySprite: {fileID: 0}
-  crass: Crass
-  crassSprite: {fileID: 0}
+  classy: Classy
+  classySprite: {fileID: 32138815, guid: c36f1263e570bbe4aaa82c99e7da5c5f, type: 3}
+  classyBackgroundSprite: {fileID: -625388120, guid: c36f1263e570bbe4aaa82c99e7da5c5f, type: 3}
+  crass: Crude
+  crassSprite: {fileID: 13269835, guid: c36f1263e570bbe4aaa82c99e7da5c5f, type: 3}
+  crassBackgroundSprite: {fileID: 1741431544, guid: c36f1263e570bbe4aaa82c99e7da5c5f, type: 3}
