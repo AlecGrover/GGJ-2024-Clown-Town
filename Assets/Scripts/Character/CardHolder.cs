@@ -44,5 +44,19 @@ public class CardHolder : MonoBehaviour
 
         
     }
+    public void PlayCard(Card card)
+    {
+        if (card.cardEffect != null)
+        {
+            card.cardEffect.PlayEffect();
+        }
+        var npcs = FindObjectsOfType<NPC>();
+        foreach (var npc in npcs)
+        {
+            npc.HitWithCard(card);
+        }
+
+
+    }
 
 }
