@@ -1,0 +1,20 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 55178bf600b17d94eb63202f293c2319, type: 3}
+  m_Name: Tone
+  m_EditorClassIdentifier: 
+  classy: Bright
+  classySprite: {fileID: -247961841, guid: c36f1263e570bbe4aaa82c99e7da5c5f, type: 3}
+  classyBackgroundSprite: {fileID: -376971959, guid: c36f1263e570bbe4aaa82c99e7da5c5f, type: 3}
+  crass: Dark
+  crassSprite: {fileID: 805860785, guid: c36f1263e570bbe4aaa82c99e7da5c5f, type: 3}
+  crassBackgroundSprite: {fileID: -1177556165, guid: c36f1263e570bbe4aaa82c99e7da5c5f, type: 3}
