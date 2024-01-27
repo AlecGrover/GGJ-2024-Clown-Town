@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b37265d7f1cb33847bd181979d3bf3d4, type: 3}
+  m_Name: Setup
+  m_EditorClassIdentifier: 
+  cardName: Set Up
+  cardDescription: Draw 1 Extra Card (ignore following draw)
+  humorType1: {fileID: 11400000, guid: c0a916a2700c86842bce78dad52389fe, type: 2}
+  humorStyle1: 0
+  humorType2: {fileID: 0}
+  humorStyle2: 0
+  power: 2
+  range: 1
+  cooldownTier: 2
+  cardEffect: {fileID: 0}
+  rarity: 2
+  cardArt: {fileID: -749713056, guid: 52c3ea367a1b44e458e1b5f79d186b54, type: 3}
+  cardBackArt: {fileID: -31051679, guid: 0883a974c50b58246a9e3cee015e1b1f, type: 3}
+  textColor: {r: 0, g: 0, b: 0, a: 1}
+  cardColor: {r: 1, g: 1, b: 1, a: 1}
+  cardBoldColor: {r: 1, g: 1, b: 1, a: 1}
+  cardLightColor: {r: 1, g: 1, b: 1, a: 1}
+  cardAccentColor: {r: 1, g: 1, b: 1, a: 1}
