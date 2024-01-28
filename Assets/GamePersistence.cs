@@ -36,7 +36,7 @@ public class GamePersistence : MonoBehaviour
         var gameMode = FindObjectOfType<GameMode>();
         if (gameMode != null)
         {
-            gameMode.GetPersistenceData(out DayCount, out GoldCount);
+            gameMode.GetPersistenceData(out DayCount, out GoldCount, out ActiveNPCs);
         }
         bHoldingSaveData = true;
     }

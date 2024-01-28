@@ -12,6 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b0f8d3eb6aae0ce4eb5d36e8a06e3045, type: 3}
   m_Name: SteamboatWillie
   m_EditorClassIdentifier: 
+  Patience: 0
   characterName: Steamboat Willie
   characterBio: Ruthless Capitalist
   taste1:
@@ -19,4 +20,6 @@ MonoBehaviour:
     taste: 0
   taste2:
     humorType: {fileID: 11400000, guid: 1af52206db112b94bb91da58e3a7ffeb, type: 2}
-    taste: 1
+    taste: 0
+  sprite: {fileID: 0}
+  animatorController: {fileID: 0}

@@ -72,17 +72,22 @@ public class NPC : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         timeSinceLastWander = wanderTime * Random.Range(0.5f, 1f);
         SeekingConversation = false;
+        Init();
+        
+        gameMode = FindObjectOfType<GameMode>();
+        
+    }
+
+    private void Init()
+    {
         if (infoDisplay != null && characterProfile != null)
         {
             infoDisplay.SetHumorTypes(characterProfile.taste1, characterProfile.taste2);
             infoDisplay.SetSprite(characterProfile.sprite);
             infoDisplay.SetAnimator(characterProfile.animatorController);
         }
-        
-        gameMode = FindObjectOfType<GameMode>();
-        
     }
-    
+
     /*
      *  Updates
      */
@@ -424,6 +429,12 @@ public class NPC : MonoBehaviour
     private void ResetWanderTimer()
     {
         timeSinceLastWander = Random.Range(0, 0.5f * wanderTime);
+    }
+
+    public void SetCharacter(Character profile)
+    {
+        characterProfile = profile;
+        Init();
     }
     
 }

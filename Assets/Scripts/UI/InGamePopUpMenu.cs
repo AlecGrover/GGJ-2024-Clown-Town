@@ -98,6 +98,14 @@ public class InGamePopUpMenu : MonoBehaviour
 
     public int GetDayNumber()
     {
-        return dayTimer;
+        MenuHandler menu = FindObjectOfType<MenuHandler>();
+        if (menu != null)
+        {
+            return menu.GetDay();
+        }
+        else
+        {
+            return -1;
+        }
     }
 }
