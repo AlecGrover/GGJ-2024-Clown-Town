@@ -5,6 +5,7 @@ using System.Linq;
 using Enums;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(NavMeshAgent))]
@@ -14,8 +15,16 @@ public class NPC : MonoBehaviour
     [SerializeField]
     private Character characterProfile;
 
+    [SerializeField]
+    private NPCInfo infoDisplay;
+    [SerializeField]
+    private Image happinessImage;
+    [SerializeField]
+    public Image AffectedHighlight;
+    private GameMode gameMode;
+
     [SerializeField, ReadOnly(true)]
-    private int happiness = 0;
+    private float happiness = 1;
     
     [Header("AI")]
     [SerializeField]
@@ -61,11 +70,52 @@ public class NPC : MonoBehaviour
         navMeshAgent = GetComponent<NavMeshAgent>();
         timeSinceLastWander = wanderTime * Random.Range(0.5f, 1f);
         SeekingConversation = false;
+        if (infoDisplay != null && characterProfile != null)
+        {
+            infoDisplay.SetHumorTypes(characterProfile.taste1, characterProfile.taste2);
+        }
+        
+        gameMode = FindObjectOfType<GameMode>();
+        
     }
     
     /*
      *  Updates
      */
+
+    void FixedUpdate()
+    {
+        if (characterProfile != null)
+        {
+            float m = (7 / 4) * characterProfile.Patience + 6.25f;
+            if (m != 0)
+            {
+                happiness -= Time.fixedDeltaTime / m;
+            }
+        }
+        
+        if (happiness <= -5 && gameMode != null) gameMode.LoseGame();
+        
+        happiness = Mathf.Clamp(happiness, -5, 5);
+        
+        if (happinessImage != null)
+        {
+
+            if (happiness > 0)
+            {
+                happinessImage.color = new Color(Math.Clamp(1 - (happiness * 0.2f), 0, 1), 1, Math.Clamp(1 - (happiness * 0.2f), 0, 1));
+            }
+            else if (happiness < 0)
+            {
+                happinessImage.color = new Color(1, Math.Clamp(1 - (-happiness * 0.2f), 0, 1), Math.Clamp(1 - (-happiness * 0.2f), 0, 1));
+            }
+            else
+            {
+                happinessImage.color = Color.white;
+            }
+        }
+    }
+    
     void Update()
     {
         Pathfind();
@@ -163,24 +213,20 @@ public class NPC : MonoBehaviour
             happiness += LikeRatio;
         }
         
-        Renderer renderer = GetComponent<Renderer>();
-        if (renderer != null)
+        if (happinessImage != null)
         {
-            Material renderMaterial = renderer.material;
-            if (renderMaterial != null)
+
+            if (happiness > 0)
             {
-                if (happiness > 0)
-                {
-                    renderMaterial.SetColor("_Color", new Color(Math.Clamp(1 - (happiness * 0.3f), 0, 1), 1, Math.Clamp(1 - (happiness * 0.3f), 0, 1)));
-                }
-                else if (happiness < 0)
-                {
-                    renderMaterial.SetColor("_Color", new Color(1, Math.Clamp(1 - (-happiness * 0.3f), 0, 1), Math.Clamp(1 - (-happiness * 0.3f), 0, 1)));
-                }
-                else
-                {
-                    renderMaterial.SetColor("_Color", Color.white);
-                }
+                happinessImage.color = new Color(Math.Clamp(1 - (happiness * 0.1f), 0, 1), 1, Math.Clamp(1 - (happiness * 0.1f), 0, 1));
+            }
+            else if (happiness < 0)
+            {
+                happinessImage.color = new Color(1, Math.Clamp(1 - (-happiness * 0.1f), 0, 1), Math.Clamp(1 - (-happiness * 0.1f), 0, 1));
+            }
+            else
+            {
+                happinessImage.color = Color.white;
             }
         }
         

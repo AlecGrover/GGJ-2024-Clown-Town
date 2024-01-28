@@ -4,10 +4,13 @@ using UnityEngine;
 
 public class GameMode : MonoBehaviour
 {
-    public GameObject cardDisplayPrefab;
-    
     [SerializeField]
     private List<Card> AllCards;
+
+    [SerializeField]
+    private InGamePopUpMenu inGameMenu;
+    
+    private bool isGameOver = false;
     
     // Start is called before the first frame update
     void Start()
@@ -21,21 +24,13 @@ public class GameMode : MonoBehaviour
         
     }
 
-    public GameObject DealCard()
+    public void LoseGame()
     {
-        GameObject newCard = Instantiate(cardDisplayPrefab);
-        CardDisplay newCardDisplay = newCard.GetComponent<CardDisplay>();
-        if (newCardDisplay == null || AllCards.Count == 0)
+        if (!isGameOver)
         {
-            Destroy(newCard);
+            if (inGameMenu!= null) inGameMenu.LoseGame();
+            isGameOver = true;
         }
-        else
-        {
-            newCardDisplay.cardData = AllCards[Random.Range(0, AllCards.Count)];
-        }
-
-        return newCard;
     }
-    
-    
+
 }

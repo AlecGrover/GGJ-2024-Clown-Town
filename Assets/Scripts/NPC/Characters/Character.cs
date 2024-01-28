@@ -14,6 +14,10 @@ public struct HumorTaste
 [CreateAssetMenu(fileName = "New Character", menuName = "Character")]
 public class Character : ScriptableObject
 {
+
+   [SerializeField] [Range(1, 5)]
+   public int Patience;
+   
    public string characterName;
    public string characterBio;
    public HumorTaste taste1;
