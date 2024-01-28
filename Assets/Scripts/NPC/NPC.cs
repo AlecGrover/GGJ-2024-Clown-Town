@@ -52,6 +52,8 @@ public class NPC : MonoBehaviour
     
     private float timeSinceLastWander = 0f;
     private ENPCPathState pathState = ENPCPathState.Idle;
+
+    public GameObject coinPrefab;
     
     public bool SeekingConversation { get; private set; }
     public NPC ConversationTarget { get; private set; }
@@ -211,6 +213,12 @@ public class NPC : MonoBehaviour
             }
 
             happiness += LikeRatio;
+
+            if(LikeRatio > 0){
+                for(int i = 0; i < LikeRatio; i++){
+                    Instantiate(coinPrefab, transform.position, transform.rotation);
+                }
+            }
         }
         
         if (happinessImage != null)

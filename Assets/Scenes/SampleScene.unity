@@ -253,6 +253,7 @@ MonoBehaviour:
   converseWeight: 1
   interactWeight: 0
   idleWeight: 1
+  coinPrefab: {fileID: 0}
 --- !u!195 &15243978
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -731,6 +732,7 @@ MonoBehaviour:
   converseWeight: 1
   interactWeight: 0
   idleWeight: 1
+  coinPrefab: {fileID: 7398677561098137561, guid: db0d831ec4106154ebb37efefa8c638c, type: 3}
 --- !u!135 &137612675
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1106,6 +1108,7 @@ MonoBehaviour:
   converseWeight: 1
   interactWeight: 0
   idleWeight: 1
+  coinPrefab: {fileID: 7398677561098137561, guid: db0d831ec4106154ebb37efefa8c638c, type: 3}
 --- !u!135 &296886845
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1284,6 +1287,7 @@ MonoBehaviour:
   converseWeight: 1
   interactWeight: 0
   idleWeight: 1
+  coinPrefab: {fileID: 7398677561098137561, guid: db0d831ec4106154ebb37efefa8c638c, type: 3}
 --- !u!135 &592010345
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1871,6 +1875,7 @@ MonoBehaviour:
   converseWeight: 1
   interactWeight: 0
   idleWeight: 1
+  coinPrefab: {fileID: 7398677561098137561, guid: db0d831ec4106154ebb37efefa8c638c, type: 3}
 --- !u!135 &1749325442
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2027,6 +2032,7 @@ MonoBehaviour:
   converseWeight: 1
   interactWeight: 0
   idleWeight: 1
+  coinPrefab: {fileID: 7398677561098137561, guid: db0d831ec4106154ebb37efefa8c638c, type: 3}
 --- !u!135 &1925282269
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2295,6 +2301,10 @@ PrefabInstance:
       propertyPath: m_PresetInfoIsWorld
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8004223350859195275, guid: 7465b7d3419827c4fa5023169267f79e, type: 3}
+      propertyPath: coinPrefab
+      value: 
+      objectReference: {fileID: 7398677561098137561, guid: db0d831ec4106154ebb37efefa8c638c, type: 3}
     - target: {fileID: 9078887045374167212, guid: 7465b7d3419827c4fa5023169267f79e, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0

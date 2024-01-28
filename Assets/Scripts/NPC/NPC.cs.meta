@@ -3,7 +3,12 @@ guid: 59b096d066d95ed4b94147471fca5203
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - characterProfile: {instanceID: 0}
+  - infoDisplay: {instanceID: 0}
+  - happinessImage: {instanceID: 0}
+  - AffectedHighlight: {instanceID: 0}
+  - coinPrefab: {fileID: 7398677561098137561, guid: db0d831ec4106154ebb37efefa8c638c, type: 3}
   executionOrder: 300
   icon: {instanceID: 0}
   userData: 
