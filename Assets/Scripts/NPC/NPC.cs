@@ -3,7 +3,10 @@ using System.Collections;
 using System.Collections.Generic;
 using System.ComponentModel;
 using UnityEngine;
+using UnityEngine.AI;
+using Random = UnityEngine.Random;
 
+[RequireComponent(typeof(NavMeshAgent))]
 public class NPC : MonoBehaviour
 {
     
@@ -12,17 +15,38 @@ public class NPC : MonoBehaviour
 
     [SerializeField, ReadOnly(true)]
     private int happiness = 0;
+    
+    [Header("AI")]
+    [SerializeField]
+    private float wanderRange = 10f;
+    [SerializeField]
+    private float wanderTime = 10f;
+    [SerializeField]
+    private float moveSpeed = 5f;
+    
+    private float timeSinceLastWander = 0f;
+    
+    // Cached Components
+    private Transform target;
+    private NavMeshAgent navMeshAgent;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        navMeshAgent = GetComponent<NavMeshAgent>();
+        timeSinceLastWander = wanderTime * Random.Range(0.5f, 1f);
     }
 
     // Update is called once per frame
-    void Update()
+    void FixedUpdate()
     {
-        
+        timeSinceLastWander += Time.deltaTime;
+        if (timeSinceLastWander >= wanderTime)
+        {
+            timeSinceLastWander = 0f;
+            Vector3 newTarget = RandomNavSphere(transform.position, wanderRange, -1);
+            navMeshAgent.SetDestination(newTarget);
+        }
     }
 
     public void HitWithCard(Card card)
@@ -77,6 +101,23 @@ public class NPC : MonoBehaviour
             }
         }
         
+    }
+
+    public Vector3 RandomNavSphere(Vector3 position, float radius, int layerMask)
+    {
+        Vector3 randomDirection = Random.insideUnitSphere * Random.Range(0, radius);
+        randomDirection += position;
+
+        NavMeshHit navMeshHit;
+        if (NavMesh.SamplePosition(randomDirection, out navMeshHit, radius, layerMask))
+        {
+            return navMeshHit.position;
+        }
+        else
+        {
+            timeSinceLastWander = wanderTime * Random.Range(0.85f, 1);
+            return position;
+        }
     }
     
 }
