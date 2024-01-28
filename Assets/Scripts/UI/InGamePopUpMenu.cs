@@ -8,9 +8,15 @@ public class InGamePopUpMenu : MonoBehaviour
     private int MENU_CLEAR = 0, MENU_PAUSE = 1, MENU_WIN = 2, MENU_GAME_OVER = 3;
     private int menuType = 0;
 
+    [SerializeField]private int MAX_DAY_TIMER = 9000;
+    [SerializeField]private int dayTimer = 0;
+
     [SerializeField]private GameObject nextButton, mainMenuButton, resumeButton;
     [SerializeField]private GameObject textPause, textWin, textLose, backgroundImage;
     
+    void Start(){
+        dayTimer = MAX_DAY_TIMER;
+    }
 
     void Update()
     {
@@ -21,6 +27,14 @@ public class InGamePopUpMenu : MonoBehaviour
             else if (menuType == MENU_PAUSE){
                 ChangeMenuType(MENU_CLEAR);
             }
+        }
+    }
+
+    void FixedUpdate(){
+        dayTimer--;
+        if(dayTimer < 0){
+            dayTimer = MAX_DAY_TIMER;
+            WinGame();
         }
     }
 
