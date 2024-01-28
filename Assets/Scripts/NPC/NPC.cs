@@ -57,6 +57,9 @@ public class NPC : MonoBehaviour
     
     public bool SeekingConversation { get; private set; }
     public NPC ConversationTarget { get; private set; }
+
+    [SerializeField] private GameObject goodS, badS, neutralS;
+    private AudioSource goodSAS, badSAS, neutralSAS;
     
     /*
      *  Cached Components
@@ -222,9 +225,16 @@ public class NPC : MonoBehaviour
             happiness += LikeRatio;
 
             if(LikeRatio > 0){
+                goodSAS.Play();
                 for(int i = 0; i < LikeRatio; i++){
                     Instantiate(coinPrefab, transform.position, transform.rotation);
                 }
+            }
+            else if (LikeRatio < 0){
+                badSAS.Play();
+            }
+            else{
+                neutralSAS.Play();
             }
         }
         

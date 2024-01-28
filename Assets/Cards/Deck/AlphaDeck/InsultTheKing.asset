@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: InsultTheKing
   m_EditorClassIdentifier: 
   cardName: Insult the King
-  cardDescription: The king HATES this joke
+  cardDescription: 
   humorType1: {fileID: 11400000, guid: c9ee6e36bf72c13409d5731f97e1c953, type: 2}
   humorStyle1: 1
   humorType2: {fileID: 11400000, guid: 1af52206db112b94bb91da58e3a7ffeb, type: 2}

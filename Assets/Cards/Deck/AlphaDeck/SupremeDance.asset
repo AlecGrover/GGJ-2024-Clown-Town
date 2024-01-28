@@ -23,7 +23,7 @@ MonoBehaviour:
   cooldownTier: 6
   cardEffect: {fileID: 0}
   rarity: 3
-  cardArt: {fileID: 1123454738, guid: fcc8e6aec051a6c45b338e963bccc117, type: 3}
+  cardArt: {fileID: -1901966908, guid: 5a6ed7bb8df97dc45bf821e8726ebe39, type: 3}
   cardBackArt: {fileID: 1403463040, guid: c938dd179ede8df42bdc9dca35f00ac8, type: 3}
   textColor: {r: 0, g: 0, b: 0, a: 1}
   cardColor: {r: 1, g: 1, b: 1, a: 1}
