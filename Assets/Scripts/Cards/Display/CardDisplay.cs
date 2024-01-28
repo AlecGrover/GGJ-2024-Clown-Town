@@ -39,15 +39,29 @@ public class CardDisplay : MonoBehaviour
     public List<Image> boldCardColors;
     public List<Image> lightCardColors;
     public List<Image> accentCardColors;
+
+    public bool bIsDirty = false;
     
-    // Start is called before the first frame update
     void Start()
+    {
+#if UNITY_EDITOR
+        if (!Application.isPlaying)
+        {
+            UpdateCardDisplay();
+        }
+#endif
+    }
+    
+    void OnEnable()
     {
         UpdateCardDisplay();
     }
 
     private void UpdateCardDisplay()
     {
+        
+        bIsDirty = false;
+        
         if (cardData == null) return;
         
         if (cardArt != null) cardArt.sprite = cardData.cardArt;
@@ -135,11 +149,10 @@ public class CardDisplay : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-#if UNITY_EDITOR
-        UpdateCardDisplay();
-#endif
+        if (bIsDirty)
+        {
+            UpdateCardDisplay();
+        }
     }
-    
-    
-    
+
 }
