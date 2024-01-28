@@ -28,6 +28,14 @@ public class InGamePopUpMenu : MonoBehaviour
         ChangeMenuType(MENU_CLEAR);
     }
 
+    public void LoseGame(){
+        ChangeMenuType(MENU_GAME_OVER);
+    }
+
+    public void WinGame(){
+        ChangeMenuType(MENU_WIN);
+    }
+
     private void ChangeMenuType(int t){
         if(t == MENU_CLEAR){
             menuType = MENU_CLEAR;
