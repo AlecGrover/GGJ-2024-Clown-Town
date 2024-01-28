@@ -149,14 +149,14 @@ RectTransform:
   m_GameObject: {fileID: 209873608}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -1}
-  m_LocalScale: {x: 0.52, y: 0.52, z: 0.52}
+  m_LocalScale: {x: 0.3, y: 0.3, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1284506630}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -332}
+  m_AnchoredPosition: {x: 789, y: -487}
   m_SizeDelta: {x: 1000, y: 300}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &209873610
@@ -503,7 +503,7 @@ AudioSource:
   m_audioClip: {fileID: 8300000, guid: 7bb4d31c888c9ea4aa766eee3821d499, type: 3}
   m_Resource: {fileID: 8300000, guid: 7bb4d31c888c9ea4aa766eee3821d499, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 1
+  m_Volume: 0.086
   m_Pitch: 1
   Loop: 0
   Mute: 0
@@ -649,7 +649,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 5c21bfd8538982843918ccf407adefd5, type: 3}
+  m_Texture: {fileID: 2800000, guid: 7395bb66598aac04daf4af3f1739bf17, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -708,7 +708,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: dde3845e19913a4428b414ff045172a9, type: 2}
+  - {fileID: 2100000, guid: 1f7a7b0275de66e4d987854830cd64e1, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -750,6 +750,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 477694e5d73196f43ae64873bb213228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coins: 0
+  days: 1
+  shopScreen: {fileID: 0}
+  audioBG: {fileID: 0}
+  smallPopUp: {fileID: 0}
+  coinText: {fileID: 0}
+  dayText: {fileID: 0}
+  shopCoinText: {fileID: 0}
+  goodsound: {fileID: 0}
+  badsound: {fileID: 0}
+  textShop:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  prices: 000000000000000000000000000000000000000000000000
 --- !u!114 &1612350642
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -762,6 +780,24 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 477694e5d73196f43ae64873bb213228, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  coins: 0
+  days: 1
+  shopScreen: {fileID: 0}
+  audioBG: {fileID: 0}
+  smallPopUp: {fileID: 0}
+  coinText: {fileID: 0}
+  dayText: {fileID: 0}
+  shopCoinText: {fileID: 0}
+  goodsound: {fileID: 0}
+  badsound: {fileID: 0}
+  textShop:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  prices: 000000000000000000000000000000000000000000000000
 --- !u!1 &1692150851
 GameObject:
   m_ObjectHideFlags: 0

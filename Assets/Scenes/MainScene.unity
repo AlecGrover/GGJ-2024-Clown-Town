@@ -6117,7 +6117,8 @@ PrefabInstance:
       value: MenuCanvas
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
+    m_RemovedGameObjects:
+    - {fileID: 9216634026095596283, guid: 6c58405aa85b4c943b60788ab6db26de, type: 3}
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6c58405aa85b4c943b60788ab6db26de, type: 3}
