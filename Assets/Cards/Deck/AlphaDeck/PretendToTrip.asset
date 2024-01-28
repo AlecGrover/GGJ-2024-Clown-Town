@@ -16,8 +16,8 @@ MonoBehaviour:
   cardDescription: 
   humorType1: {fileID: 11400000, guid: a0c3e926ec936344f95176bac29369db, type: 2}
   humorStyle1: 1
-  humorType2: {fileID: 0}
-  humorStyle2: 0
+  humorType2: {fileID: 11400000, guid: c0a916a2700c86842bce78dad52389fe, type: 2}
+  humorStyle2: 1
   power: 2
   range: 2
   cooldownTier: 5

@@ -16,7 +16,7 @@ MonoBehaviour:
   cardDescription: 
   humorType1: {fileID: 11400000, guid: c9ee6e36bf72c13409d5731f97e1c953, type: 2}
   humorStyle1: 0
-  humorType2: {fileID: 0}
+  humorType2: {fileID: 11400000, guid: a0c3e926ec936344f95176bac29369db, type: 2}
   humorStyle2: 0
   power: 3
   range: 1
