@@ -1585,11 +1585,15 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   coins: 0
+  days: 1
   shopScreen: {fileID: 0}
   audioBG: {fileID: 0}
   smallPopUp: {fileID: 0}
   coinText: {fileID: 0}
+  dayText: {fileID: 0}
   shopCoinText: {fileID: 0}
+  goodsound: {fileID: 0}
+  badsound: {fileID: 0}
   textShop:
   - {fileID: 0}
   - {fileID: 0}

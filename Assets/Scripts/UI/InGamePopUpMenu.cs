@@ -39,9 +39,11 @@ public class InGamePopUpMenu : MonoBehaviour
     private void ChangeMenuType(int t){
         if(t == MENU_CLEAR){
             menuType = MENU_CLEAR;
+            Time.timeScale = 1;
             backgroundImage.SetActive(false);
         }
         else{
+            Time.timeScale = 0;
             backgroundImage.gameObject.SetActive(true);
             if(t == MENU_PAUSE){
                 menuType = MENU_PAUSE;

@@ -17,6 +17,7 @@ public class MenuHandler : MonoBehaviour
     [SerializeField] private GameObject[] textShop = new GameObject[6];
     
     [SerializeField] private int[] prices = new int[6];
+
     
     public void GoToMainMenu(){
         SceneManager.LoadScene(TITLE_SCREEN);
@@ -46,6 +47,7 @@ public class MenuHandler : MonoBehaviour
         //This is not resume, only after day ends
         days++;
         CharacterSetUp();
+        Time.timeScale = 1;
         dayText.GetComponent<TextMeshProUGUI>().text = days.ToString();
         shopScreen.SetActive(false);
         shopScreen.GetComponent<AudioSource>().Stop();
@@ -94,11 +96,11 @@ public class MenuHandler : MonoBehaviour
             }
             else if (i < 5){
                 prices[i] = Random.Range(10,15);
-                //Add uncommon card to shop
+                //Add Rare card to shop
             }
             else{
                 prices[i] = Random.Range(15,20);
-                //Add uncommon card to shop
+                //Add Epic card to shop
             }
 
             textShop[i].GetComponent<TextMeshProUGUI>().text = prices[i].ToString();
