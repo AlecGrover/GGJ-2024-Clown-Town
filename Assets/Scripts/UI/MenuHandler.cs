@@ -60,13 +60,13 @@ public class MenuHandler : MonoBehaviour
         if(prices[i-1] <= coins && prices[i-1] != 0){
             coins -= prices[i-1];
             //Add card
+            //Remove Card from shop screen
             prices[i-1] = 0;
             textShop[i-1].GetComponent<TextMeshProUGUI>().text = "X";
             goodsound.GetComponent<AudioSource>().Play();
         }
         else{
             badsound.GetComponent<AudioSource>().Play();
-            //Can't Buy
         }
 
     }
@@ -86,12 +86,15 @@ public class MenuHandler : MonoBehaviour
 
             if(i < 3){
                 prices[i] = Random.Range(6,10);
+                //Add uncommon card to shop
             }
             else if (i < 5){
                 prices[i] = Random.Range(10,15);
+                //Add uncommon card to shop
             }
             else{
                 prices[i] = Random.Range(15,20);
+                //Add uncommon card to shop
             }
 
             textShop[i].GetComponent<TextMeshProUGUI>().text = prices[i].ToString();
