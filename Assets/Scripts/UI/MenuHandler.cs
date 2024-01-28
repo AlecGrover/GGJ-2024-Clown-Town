@@ -10,9 +10,9 @@ public class MenuHandler : MonoBehaviour
 
     private bool isShopping = false;
 
-    [SerializeField] private int coins = 0;
+    [SerializeField] private int coins = 0, days = 1;
 
-    [SerializeField] private GameObject shopScreen, audioBG, smallPopUp, coinText, shopCoinText,goodsound,badsound;
+    [SerializeField] private GameObject shopScreen, audioBG, smallPopUp, coinText, dayText, shopCoinText,goodsound,badsound;
 
     [SerializeField] private GameObject[] textShop = new GameObject[6];
     
@@ -43,6 +43,10 @@ public class MenuHandler : MonoBehaviour
     }
 
     public void ReturnToGame(){
+        //This is not resume, only after day ends
+        days++;
+        CharacterSetUp();
+        dayText.GetComponent<TextMeshProUGUI>().text = days.ToString();
         shopScreen.SetActive(false);
         shopScreen.GetComponent<AudioSource>().Stop();
         audioBG.GetComponent<AudioSource>().Play();
@@ -99,6 +103,10 @@ public class MenuHandler : MonoBehaviour
 
             textShop[i].GetComponent<TextMeshProUGUI>().text = prices[i].ToString();
         }
+    }
+
+    private void CharacterSetUp(){
+        
     }
         
 }
