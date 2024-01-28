@@ -17,9 +17,9 @@ MonoBehaviour:
   characterBio: Hard working woman
   taste1:
     humorType: {fileID: 11400000, guid: 1af52206db112b94bb91da58e3a7ffeb, type: 2}
-    taste: 0
+    taste: 1
   taste2:
     humorType: {fileID: 11400000, guid: c9ee6e36bf72c13409d5731f97e1c953, type: 2}
     taste: 0
-  sprite: {fileID: 0}
-  animatorController: {fileID: 0}
+  sprite: {fileID: 1969361906, guid: 87e2c0535c8d03441b1feaaea9bbbaa3, type: 3}
+  animatorController: {fileID: 9100000, guid: a650c167044ba0c4e90b2e26a752d0a0, type: 2}

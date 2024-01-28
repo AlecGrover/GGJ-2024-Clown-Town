@@ -17,9 +17,9 @@ MonoBehaviour:
   characterBio: Bratty Young Girl
   taste1:
     humorType: {fileID: 11400000, guid: c9ee6e36bf72c13409d5731f97e1c953, type: 2}
-    taste: 0
+    taste: 1
   taste2:
     humorType: {fileID: 11400000, guid: c0a916a2700c86842bce78dad52389fe, type: 2}
-    taste: 0
-  sprite: {fileID: 0}
-  animatorController: {fileID: 0}
+    taste: 1
+  sprite: {fileID: 669443963, guid: f229a5647143bf14197f7fec9ef2a0e6, type: 3}
+  animatorController: {fileID: 9100000, guid: 95b74e72692ee91489b308df0a546e25, type: 2}

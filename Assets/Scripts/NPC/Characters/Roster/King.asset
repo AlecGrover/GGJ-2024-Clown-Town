@@ -17,7 +17,7 @@ MonoBehaviour:
   characterBio: Ruler of the Lands
   taste1:
     humorType: {fileID: 11400000, guid: a0c3e926ec936344f95176bac29369db, type: 2}
-    taste: 0
+    taste: 1
   taste2:
     humorType: {fileID: 11400000, guid: c0a916a2700c86842bce78dad52389fe, type: 2}
     taste: 0

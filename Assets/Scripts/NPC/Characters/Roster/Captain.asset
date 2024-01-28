@@ -17,9 +17,9 @@ MonoBehaviour:
   characterBio: Royal Guard
   taste1:
     humorType: {fileID: 11400000, guid: c0a916a2700c86842bce78dad52389fe, type: 2}
-    taste: 0
+    taste: 1
   taste2:
     humorType: {fileID: 11400000, guid: 1af52206db112b94bb91da58e3a7ffeb, type: 2}
-    taste: 0
-  sprite: {fileID: 0}
-  animatorController: {fileID: 0}
+    taste: 1
+  sprite: {fileID: 1602661493, guid: 428f23a62cc55b94bae6f16186cacc99, type: 3}
+  animatorController: {fileID: 9100000, guid: 53d1f1a9f28001748a1b22f0d0bf2dff, type: 2}

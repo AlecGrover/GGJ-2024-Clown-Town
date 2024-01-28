@@ -16,10 +16,10 @@ MonoBehaviour:
   characterName: Bard
   characterBio: Competitor in Entertainment
   taste1:
-    humorType: {fileID: 11400000, guid: c0a916a2700c86842bce78dad52389fe, type: 2}
-    taste: 0
+    humorType: {fileID: 11400000, guid: 1af52206db112b94bb91da58e3a7ffeb, type: 2}
+    taste: 1
   taste2:
     humorType: {fileID: 11400000, guid: a0c3e926ec936344f95176bac29369db, type: 2}
     taste: 0
-  sprite: {fileID: 0}
-  animatorController: {fileID: 0}
+  sprite: {fileID: 661336874, guid: 92dd6c47d00a5d141854f0166112668c, type: 3}
+  animatorController: {fileID: 9100000, guid: 199e9dfc6b5db0e46ae758edc8834990, type: 2}

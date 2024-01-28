@@ -21,5 +21,5 @@ MonoBehaviour:
   taste2:
     humorType: {fileID: 11400000, guid: a0c3e926ec936344f95176bac29369db, type: 2}
     taste: 0
-  sprite: {fileID: 0}
-  animatorController: {fileID: 0}
+  sprite: {fileID: -685933328, guid: 5ef729bd314f3474b9bc5421cab1c7e1, type: 3}
+  animatorController: {fileID: 9100000, guid: 939d49031df228649836e34a4dcff7fd, type: 2}
