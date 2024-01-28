@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEngine;
 
 public class InGamePopUpMenu : MonoBehaviour
@@ -46,7 +47,13 @@ public class InGamePopUpMenu : MonoBehaviour
         ChangeMenuType(MENU_GAME_OVER);
     }
 
-    public void WinGame(){
+    public void WinGame()
+    {
+        MenuHandler menu = FindObjectOfType<MenuHandler>();
+        if (menu != null)
+        {
+            menu.SetDay(menu.GetDay() + 1);
+        }
         ChangeMenuType(MENU_WIN);
     }
 
@@ -87,5 +94,10 @@ public class InGamePopUpMenu : MonoBehaviour
                 textLose.SetActive(true);
             }
         }
+    }
+
+    public int GetDayNumber()
+    {
+        return dayTimer;
     }
 }

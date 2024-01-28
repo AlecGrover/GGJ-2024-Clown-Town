@@ -20,14 +20,21 @@ public class MenuHandler : MonoBehaviour
 
     
     public void GoToMainMenu(){
+        GamePersistence gamePersistence = FindObjectOfType<GamePersistence>();
+        if (gamePersistence != null) Destroy(gamePersistence);
         SceneManager.LoadScene(TITLE_SCREEN);
     }
 
     public void GoToMainScene(){
+        GamePersistence gamePersistence = FindObjectOfType<GamePersistence>();
+        if (gamePersistence != null) gamePersistence.Save();
+        Time.timeScale = 1;
         SceneManager.LoadScene(MAIN_SCREEN);
     }
 
     public void GoToTutorial(){
+        GamePersistence gamePersistence = FindObjectOfType<GamePersistence>();
+        if (gamePersistence != null) Destroy(gamePersistence);
         SceneManager.LoadScene(TUTORIAL_SCREEN);
     }
 
@@ -85,6 +92,17 @@ public class MenuHandler : MonoBehaviour
 
     public int GetMoney(){
         return coins;
+    }
+
+    public void SetDay(int Day)
+    {
+        days = Day;
+        dayText.GetComponent<TextMeshProUGUI>().text = days.ToString();
+    }
+
+    public int GetDay()
+    {
+        return days;
     }
 
     private void ResetShop(){

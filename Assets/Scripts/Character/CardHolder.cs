@@ -20,13 +20,18 @@ public class CardHolder : MonoBehaviour
     
     void Start()
     {
+        Init();
+    }
+
+    private void Init()
+    {
         StartingHandSize = Mathf.Clamp(StartingHandSize, 0, handSlots.Count);
         foreach (CardUI cardUI in handSlots)
         {
             cardUI.SetCardData(null);
             cardUI.gameObject.SetActive(false);
         }
-        
+
         Shuffle();
         for (int i = 0; i < StartingHandSize; i++)
         {
@@ -145,6 +150,22 @@ public class CardHolder : MonoBehaviour
                 }
             }
         }
+    }
+
+    public List<Card> GetAllOwnedCards()
+    {
+        List<Card> ownedCards = new List<Card>();
+        ownedCards.AddRange(deck);
+        ownedCards.AddRange(discardPile);
+        ownedCards.AddRange(hand);
+        return ownedCards;
+    }
+
+    public void SetDeck(List<Card> DeckCards)
+    {
+        deck.AddRange(DeckCards);
+        hand.Clear();
+        discardPile.Clear();
     }
 
 }
