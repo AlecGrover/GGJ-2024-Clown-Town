@@ -17,7 +17,9 @@ MonoBehaviour:
   characterBio: Kinda keeps to herself
   taste1:
     humorType: {fileID: 11400000, guid: c9ee6e36bf72c13409d5731f97e1c953, type: 2}
-    taste: 1
+    taste: 0
   taste2:
     humorType: {fileID: 11400000, guid: 1af52206db112b94bb91da58e3a7ffeb, type: 2}
     taste: 0
+  sprite: {fileID: 0}
+  animatorController: {fileID: 0}

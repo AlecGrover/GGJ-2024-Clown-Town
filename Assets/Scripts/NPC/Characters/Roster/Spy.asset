@@ -17,9 +17,9 @@ MonoBehaviour:
   characterBio: Strong silent type
   taste1:
     humorType: {fileID: 11400000, guid: c0a916a2700c86842bce78dad52389fe, type: 2}
-    taste: 1
+    taste: 0
   taste2:
     humorType: {fileID: 11400000, guid: c9ee6e36bf72c13409d5731f97e1c953, type: 2}
-    taste: 1
+    taste: 0
   sprite: {fileID: 249368335, guid: 1f61387822fc48542a224c73dd44a4ae, type: 3}
   animatorController: {fileID: 9100000, guid: 209ef78df6c78c54eb4b9a1b041cb865, type: 2}
