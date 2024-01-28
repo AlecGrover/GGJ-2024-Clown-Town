@@ -75,6 +75,8 @@ public class NPC : MonoBehaviour
         if (infoDisplay != null && characterProfile != null)
         {
             infoDisplay.SetHumorTypes(characterProfile.taste1, characterProfile.taste2);
+            infoDisplay.SetSprite(characterProfile.sprite);
+            infoDisplay.SetAnimator(characterProfile.animatorController);
         }
         
         gameMode = FindObjectOfType<GameMode>();
@@ -253,14 +255,18 @@ public class NPC : MonoBehaviour
         NavMeshHit navMeshHit;
         if (NavMesh.SamplePosition(randomDirection, out navMeshHit, radius, layerMask))
         {
-            foundNewDestination = true;
-            return navMeshHit.position;
+            NavMeshPath navMeshPath = new NavMeshPath();
+
+            if (navMeshAgent.CalculatePath(navMeshHit.position, navMeshPath) &&
+                navMeshPath.status == NavMeshPathStatus.PathComplete)
+            {
+                foundNewDestination = true;
+                return navMeshHit.position;
+            }
         }
-        else
-        {
-            foundNewDestination = false;
-            return position;
-        }
+
+        foundNewDestination = false;
+        return position;
     }
     
     // Pathfinds the NPC if the wander timer has expired

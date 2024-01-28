@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Enums;
+using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -12,6 +13,9 @@ public class NPCInfo : MonoBehaviour
     public Image HumorImage1;
     public Image HumorImage2;
     public Image TargetedImage;
+
+    public SpriteRenderer spriteRenderer;
+    public Animator animator;
     
     // Start is called before the first frame update
     void OnEnable()
@@ -34,10 +38,20 @@ public class NPCInfo : MonoBehaviour
             HumorImage2.sprite = humorTaste2.taste == EHumorType.Classy ? humorTaste2.humorType.ClassySprite : humorTaste2.humorType.CrassSprite;
         }
     }
+
+    public void SetSprite(Sprite sprite)
+    {
+        if (spriteRenderer!= null) spriteRenderer.sprite = sprite;
+    }
+
+    public void SetAnimator(AnimatorController animatorController)
+    {
+        if (animator!= null) animator.runtimeAnimatorController = animatorController;
+    }
     
     // Update is called once per frame
     void LateUpdate()
     {
-        transform.rotation = baseRotation;
+        // transform.rotation = baseRotation;
     }
 }

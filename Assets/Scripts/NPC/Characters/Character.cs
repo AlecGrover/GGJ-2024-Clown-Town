@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Enums;
+using UnityEditor.Animations;
 using UnityEngine;
 
 
@@ -22,4 +23,7 @@ public class Character : ScriptableObject
    public string characterBio;
    public HumorTaste taste1;
    public HumorTaste taste2;
+   
+   public Sprite sprite;
+   public AnimatorController animatorController;
 }
