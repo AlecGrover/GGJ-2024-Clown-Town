@@ -24,7 +24,7 @@ MonoBehaviour:
   cardEffect: {fileID: 0}
   rarity: 1
   cardArt: {fileID: -2071063229, guid: 5f86c0e44c3c1904fbdab02ea69472ba, type: 3}
-  cardBackArt: {fileID: -794899967, guid: 0883a974c50b58246a9e3cee015e1b1f, type: 3}
+  cardBackArt: {fileID: 226180730, guid: 0883a974c50b58246a9e3cee015e1b1f, type: 3}
   textColor: {r: 0, g: 0, b: 0, a: 1}
   cardColor: {r: 1, g: 1, b: 1, a: 1}
   cardBoldColor: {r: 1, g: 1, b: 1, a: 1}
