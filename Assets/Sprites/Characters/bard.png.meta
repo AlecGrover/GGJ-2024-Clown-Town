@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 088bcb66d25732b469ab0393f1f60834
+guid: 92dd6c47d00a5d141854f0166112668c
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -58,7 +58,7 @@ TextureImporter:
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
-  flipbookColumns: 2
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JesterBIG_0
+      name: bard_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 624
-        height: 672
+        width: 96
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 888741f3733b70648a6b10edee460596
-      internalID: -520756655
+      spriteID: 4360d2fed7baf7747b2edc2e0a7ed500
+      internalID: 661336874
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JesterBIG_1
+      name: bard_1
       rect:
         serializedVersion: 2
-        x: 624
+        x: 96
         y: 0
-        width: 624
-        height: 672
+        width: 96
+        height: 124
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bd57c9ef97391f4dab6cd38c8ceb479
-      internalID: -954569286
+      spriteID: 796d917fd267b5945a5c837a1d05d841
+      internalID: 1236836030
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: da4c1936905d6ff409d3829d8dc11fca
+    spriteID: a40e2935d92244d4b91e19ca90cae2e3
     internalID: 0
     vertices: []
     indices: 
@@ -149,8 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      JesterBIG_0: -520756655
-      JesterBIG_1: -954569286
+      bard_0: 661336874
+      bard_1: 1236836030
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

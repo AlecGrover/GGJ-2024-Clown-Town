@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 088bcb66d25732b469ab0393f1f60834
+guid: 5ef729bd314f3474b9bc5421cab1c7e1
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -58,7 +58,7 @@ TextureImporter:
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
-  flipbookColumns: 2
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: JesterBIG_0
+      name: duke_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 624
-        height: 672
+        width: 92
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 888741f3733b70648a6b10edee460596
-      internalID: -520756655
+      spriteID: 61b75e4377a161d48a06995a922b2941
+      internalID: -685933328
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: JesterBIG_1
+      name: duke_1
       rect:
         serializedVersion: 2
-        x: 624
+        x: 92
         y: 0
-        width: 624
-        height: 672
+        width: 92
+        height: 92
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0bd57c9ef97391f4dab6cd38c8ceb479
-      internalID: -954569286
+      spriteID: c334963c84d90284e942c32ab01c1ba3
+      internalID: -501584407
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: da4c1936905d6ff409d3829d8dc11fca
+    spriteID: b689fb913eb654e45881eeaa6f5822d6
     internalID: 0
     vertices: []
     indices: 
@@ -149,8 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      JesterBIG_0: -520756655
-      JesterBIG_1: -954569286
+      duke_0: -685933328
+      duke_1: -501584407
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
