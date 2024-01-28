@@ -77,6 +77,7 @@ public class MenuHandler : MonoBehaviour
             prices[i-1] = 0;
             textShop[i-1].GetComponent<TextMeshProUGUI>().text = "X";
             goodsound.GetComponent<AudioSource>().Play();
+            SetMoney(-prices[i-1]);
         }
         else{
             badsound.GetComponent<AudioSource>().Play();
