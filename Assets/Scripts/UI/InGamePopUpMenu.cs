@@ -35,7 +35,7 @@ public class InGamePopUpMenu : MonoBehaviour
         dayTimer--;
         if(dayTimer < 0){
             dayTimer = MAX_DAY_TIMER;
-            WinGame();
+            //WinGame();
         }
     }
 
