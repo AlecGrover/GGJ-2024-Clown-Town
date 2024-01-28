@@ -13,8 +13,7 @@ MonoBehaviour:
   m_Name: Acrobatics
   m_EditorClassIdentifier: 
   cardName: Acrobatic Display
-  cardDescription: Your Movement Speed is increased by 50% until you play another
-    card
+  cardDescription: 
   humorType1: {fileID: 11400000, guid: 1af52206db112b94bb91da58e3a7ffeb, type: 2}
   humorStyle1: 1
   humorType2: {fileID: 11400000, guid: a0c3e926ec936344f95176bac29369db, type: 2}
@@ -24,7 +23,7 @@ MonoBehaviour:
   cooldownTier: 3
   cardEffect: {fileID: 0}
   rarity: 3
-  cardArt: {fileID: -749713056, guid: 52c3ea367a1b44e458e1b5f79d186b54, type: 3}
+  cardArt: {fileID: 1123454738, guid: fcc8e6aec051a6c45b338e963bccc117, type: 3}
   cardBackArt: {fileID: 1627600220, guid: 0883a974c50b58246a9e3cee015e1b1f, type: 3}
   textColor: {r: 0, g: 0, b: 0, a: 1}
   cardColor: {r: 1, g: 1, b: 1, a: 1}

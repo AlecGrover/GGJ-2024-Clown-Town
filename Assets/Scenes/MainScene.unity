@@ -4364,6 +4364,7 @@ MonoBehaviour:
   GoldCount: 0
   ActiveNPCs: []
   Deck: []
+  bHoldingSaveData: 0
 --- !u!4 &1677668906
 Transform:
   m_ObjectHideFlags: 0

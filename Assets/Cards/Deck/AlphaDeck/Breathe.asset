@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: Breathe
   m_EditorClassIdentifier: 
   cardName: Take a Deep Breath
-  cardDescription: Combo, Next card has +1 Range
+  cardDescription: 
   humorType1: {fileID: 11400000, guid: a0c3e926ec936344f95176bac29369db, type: 2}
   humorStyle1: 1
   humorType2: {fileID: 0}
@@ -23,7 +23,7 @@ MonoBehaviour:
   cooldownTier: 1
   cardEffect: {fileID: 0}
   rarity: 2
-  cardArt: {fileID: -749713056, guid: 52c3ea367a1b44e458e1b5f79d186b54, type: 3}
+  cardArt: {fileID: -342470561, guid: 7ff67672f53141b49a58675dd9c0ad17, type: 3}
   cardBackArt: {fileID: -1926859604, guid: 0883a974c50b58246a9e3cee015e1b1f, type: 3}
   textColor: {r: 0, g: 0, b: 0, a: 1}
   cardColor: {r: 1, g: 1, b: 1, a: 1}

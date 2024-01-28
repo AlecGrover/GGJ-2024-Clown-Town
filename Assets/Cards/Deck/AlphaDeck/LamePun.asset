@@ -13,7 +13,7 @@ MonoBehaviour:
   m_Name: LamePun
   m_EditorClassIdentifier: 
   cardName: Lame Pun
-  cardDescription: Boost next cards power by 1
+  cardDescription: 
   humorType1: {fileID: 11400000, guid: c0a916a2700c86842bce78dad52389fe, type: 2}
   humorStyle1: 1
   humorType2: {fileID: 0}
