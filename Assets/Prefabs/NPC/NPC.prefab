@@ -135,6 +135,7 @@ MonoBehaviour:
   converseWeight: 1
   interactWeight: 0
   idleWeight: 1
+  coinPrefab: {fileID: 7398677561098137561, guid: db0d831ec4106154ebb37efefa8c638c, type: 3}
 --- !u!195 &7344668725127072037
 NavMeshAgent:
   m_ObjectHideFlags: 0

@@ -253,6 +253,7 @@ MonoBehaviour:
   converseWeight: 1
   interactWeight: 1
   idleWeight: 1
+  coinPrefab: {fileID: 7398677561098137561, guid: db0d831ec4106154ebb37efefa8c638c, type: 3}
 --- !u!195 &15243978
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -1682,6 +1683,7 @@ MonoBehaviour:
   converseWeight: 1
   interactWeight: 1
   idleWeight: 1
+  coinPrefab: {fileID: 7398677561098137561, guid: db0d831ec4106154ebb37efefa8c638c, type: 3}
 --- !u!135 &559270815
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4889,6 +4891,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40fbe84bd6e93d74a9488d3942bbb36c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  MAX_DAY_TIMER: 9000
+  dayTimer: 0
   nextButton: {fileID: 1505615119}
   mainMenuButton: {fileID: 1098277802}
   resumeButton: {fileID: 1213525891}
@@ -7378,7 +7382,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -20.669458, y: -51.975307}
+  m_AnchoredPosition: {x: -20.669458, y: -48}
   m_SizeDelta: {x: 1024, y: 256}
   m_Pivot: {x: 0, y: 0}
 --- !u!114 &2135008137
