@@ -168,4 +168,8 @@ public class CardHolder : MonoBehaviour
         discardPile.Clear();
     }
 
+    public void AddToDeck(Card cardData)
+    {
+        deck.Add(cardData);
+    }
 }

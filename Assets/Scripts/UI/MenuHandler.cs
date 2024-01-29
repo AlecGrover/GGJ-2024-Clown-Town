@@ -15,6 +15,8 @@ public class MenuHandler : MonoBehaviour
     [SerializeField] private GameObject shopScreen, audioBG, smallPopUp, coinText, dayText, shopCoinText,goodsound,badsound;
 
     [SerializeField] private GameObject[] textShop = new GameObject[6];
+    [SerializeField] private CardUI[] cardUis = new CardUI[6];
+    [SerializeField] private GameMode gameMode;
     
     [SerializeField] private int[] prices = new int[6];
 
@@ -77,6 +79,11 @@ public class MenuHandler : MonoBehaviour
             prices[i-1] = 0;
             textShop[i-1].GetComponent<TextMeshProUGUI>().text = "X";
             goodsound.GetComponent<AudioSource>().Play();
+            if ((i - 1) < cardUis.Length && (i - 1) >= 0)
+            {
+                if (gameMode != null) gameMode.AddCardToPlayer(cardUis[i - 1].CardData);
+                cardUis[i - 1].gameObject.SetActive(false);
+            }
             SetMoney(-prices[i-1]);
         }
         else{
@@ -111,14 +118,22 @@ public class MenuHandler : MonoBehaviour
 
             if(i < 3){
                 prices[i] = Random.Range(6,10);
+                if (gameMode != null && i < cardUis.Length && cardUis[i] != null)
+                {
+                    Debug.Log("Setting card");
+                    cardUis[i].gameObject.SetActive(true);
+                    cardUis[i].SetCardData(gameMode.GetRandomCard());
+                }
                 //Add uncommon card to shop
             }
             else if (i < 5){
                 prices[i] = Random.Range(10,15);
+                if (gameMode != null && cardUis[i] != null) cardUis[i].SetCardData(gameMode.GetRandomCard());
                 //Add Rare card to shop
             }
             else{
                 prices[i] = Random.Range(15,20);
+                if (gameMode != null && cardUis[i] != null) cardUis[i].SetCardData(gameMode.GetRandomCard());
                 //Add Epic card to shop
             }
 

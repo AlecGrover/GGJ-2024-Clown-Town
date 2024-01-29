@@ -225,16 +225,16 @@ public class NPC : MonoBehaviour
             happiness += LikeRatio;
 
             if(LikeRatio > 0){
-                goodSAS.Play();
+                if (goodSAS != null) goodSAS.Play();
                 for(int i = 0; i < LikeRatio; i++){
                     Instantiate(coinPrefab, transform.position, transform.rotation);
                 }
             }
             else if (LikeRatio < 0){
-                badSAS.Play();
+                if (badSAS != null) badSAS.Play();
             }
             else{
-                neutralSAS.Play();
+                if (neutralSAS != null) neutralSAS.Play();
             }
         }
         

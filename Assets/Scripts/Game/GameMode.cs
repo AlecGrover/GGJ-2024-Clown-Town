@@ -171,4 +171,22 @@ public class GameMode : MonoBehaviour
         }
     }
 
+    public Card GetRandomCard()
+    {
+        int index = Random.Range(0, AllCards.Count);
+        if (index < AllCards.Count)
+        {
+            return AllCards[index];
+        }
+
+        return null;
+    }
+
+    public void AddCardToPlayer(Card cardData)
+    {
+        if (player != null)
+        {
+            player.AddToDeck(cardData);
+        }
+    }
 }

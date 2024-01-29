@@ -22,6 +22,8 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
     private List<NPC> highlightedNPCs = new List<NPC>();
     
     private bool isHighlighted = false;
+
+    public bool IgnoreMouse = false;
     
     // Start is called before the first frame update
     void Start()
@@ -51,12 +53,18 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
 
     public void SetCardData(Card cardData)
     {
+        Debug.Log("Set card data");
         CardData = cardData;
-        if (cardDisplay!= null) cardDisplay.cardData = CardData;
+        if (cardDisplay != null)
+        {
+            cardDisplay.cardData = CardData;
+            cardDisplay.bIsDirty = true;
+        }
     }
     
     public void OnPointerEnter(PointerEventData eventData)
     {
+        if (IgnoreMouse) return;
         transform.localScale = new Vector3(1.1f, 1.1f);
         if (highlightImage != null)
         {
@@ -69,6 +77,7 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        if (IgnoreMouse) return;
         transform.localScale = new Vector3(1f, 1f);
         if (highlightImage != null)
         {
@@ -81,6 +90,7 @@ public class CardUI : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, 
 
     public void OnPointerClick(PointerEventData eventData)
     {
+        if (IgnoreMouse) return;
         if (CardData != null)
         {
             FindObjectOfType<CardHolder>().PlayCard(this);
