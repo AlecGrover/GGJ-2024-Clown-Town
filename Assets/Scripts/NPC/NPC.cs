@@ -78,6 +78,10 @@ public class NPC : MonoBehaviour
         Init();
         
         gameMode = FindObjectOfType<GameMode>();
+
+        goodSAS = goodS.GetComponent<AudioSource>();
+        badSAS = goodS.GetComponent<AudioSource>();
+        neutralSAS = goodS.GetComponent<AudioSource>();
         
     }
 
