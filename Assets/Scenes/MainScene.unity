@@ -585,12 +585,12 @@ MonoBehaviour:
   BaseRange: 2
   hand: []
   deck:
-  - {fileID: 11400000, guid: 6fc7f998abad470419af7b8722062a6b, type: 2}
-  - {fileID: 11400000, guid: 5a9c611b4dec1a141a40c016a0b83c23, type: 2}
-  - {fileID: 11400000, guid: 576824281fa246c48acace524f652a42, type: 2}
-  - {fileID: 11400000, guid: 976282c56dd13964c909ed791059709e, type: 2}
-  - {fileID: 11400000, guid: 1a79b706f54d8ae4780b6ba4946ed84d, type: 2}
-  - {fileID: 11400000, guid: a33456faa5a6a68488eaf7ffc0913eb2, type: 2}
+  - {fileID: 11400000, guid: 1cd31401e2693584d8a39bcbcbf614be, type: 2}
+  - {fileID: 11400000, guid: 08c30d54413befd429e579ce17ae66ee, type: 2}
+  - {fileID: 11400000, guid: 2402904487baec14486d40671969fac0, type: 2}
+  - {fileID: 11400000, guid: 3f76da6629dfbe643926800382620662, type: 2}
+  - {fileID: 11400000, guid: 2927e1a98e1cadd4688a6f71c7220233, type: 2}
+  - {fileID: 11400000, guid: 9e876d2c7dd045e4d9fb3c0b9576f92e, type: 2}
   discardPile: []
   handSlots:
   - {fileID: 1217992215}
