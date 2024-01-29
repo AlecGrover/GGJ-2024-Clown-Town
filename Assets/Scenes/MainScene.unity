@@ -6036,7 +6036,7 @@ PrefabInstance:
       objectReference: {fileID: 926450691}
     - target: {fileID: 4271610407859141591, guid: 5fc0f86fdad0b3d4492517941019c5bf, type: 3}
       propertyPath: secondsPerDay
-      value: 15
+      value: 180
       objectReference: {fileID: 0}
     - target: {fileID: 4271610407859141591, guid: 5fc0f86fdad0b3d4492517941019c5bf, type: 3}
       propertyPath: SpawnPosition.y
