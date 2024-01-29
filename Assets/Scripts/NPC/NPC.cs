@@ -80,8 +80,8 @@ public class NPC : MonoBehaviour
         gameMode = FindObjectOfType<GameMode>();
 
         goodSAS = goodS.GetComponent<AudioSource>();
-        badSAS = goodS.GetComponent<AudioSource>();
-        neutralSAS = goodS.GetComponent<AudioSource>();
+        badSAS = badS.GetComponent<AudioSource>();
+        neutralSAS = neutralS.GetComponent<AudioSource>();
         
     }
 
