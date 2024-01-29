@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using Enums;
-using UnityEditor.Animations;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -44,7 +43,7 @@ public class NPCInfo : MonoBehaviour
         if (spriteRenderer!= null) spriteRenderer.sprite = sprite;
     }
 
-    public void SetAnimator(AnimatorController animatorController)
+    public void SetAnimator(RuntimeAnimatorController animatorController)
     {
         if (animator!= null) animator.runtimeAnimatorController = animatorController;
     }

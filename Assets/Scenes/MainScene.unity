@@ -2764,8 +2764,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   target: {fileID: 226914425}
   smoothing: 0.1
-  offset: {x: -12.5, y: 20, z: -12.5}
-  deadzone: 5
+  offset: {x: -15, y: 20, z: -15}
+  deadzone: 1
 --- !u!82 &963194230
 AudioSource:
   m_ObjectHideFlags: 0
