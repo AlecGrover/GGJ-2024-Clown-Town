@@ -163,9 +163,10 @@ public class CardHolder : MonoBehaviour
 
     public void SetDeck(List<Card> DeckCards)
     {
+        deck.Clear();
+        discardPile.Clear();
         deck.AddRange(DeckCards);
         hand.Clear();
-        discardPile.Clear();
     }
 
     public void AddToDeck(Card cardData)
